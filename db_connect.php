@@ -5,9 +5,9 @@
  * 各PHPファイルから require_once で読み込んで使う
  */
 
-$dbn  = 'mysql:dbname=gs_php_db;charset=utf8mb4;port=3306;host=localhost';
-$user = 'root';
-$pwd  = '';
+$dbn  = 'mysql:dbname=shigeru67_gs_php_db;charset=utf8mb4;port=3306;host=mysql80.shigeru67.sakura.ne.jp';
+$user = 'shigeru67_gs_php_db';
+$pwd  = 'Yt_20030316';
 
 try {
     $pdo = new PDO($dbn, $user, $pwd);
