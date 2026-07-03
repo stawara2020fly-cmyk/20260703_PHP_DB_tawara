@@ -1,0 +1,169 @@
+:root {
+  --bg: #f5f4f0;
+  --card: #ffffff;
+  --text: #2c2c2a;
+  --text-sub: #5f5e5a;
+  --accent: #0f6e56;
+  --accent-light: #e1f5ee;
+  --border: #d3d1c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+header p {
+  color: var(--text-sub);
+  font-size: 14px;
+  margin: 0 0 32px;
+}
+
+.search-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+#keyword {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+}
+
+#keyword:focus {
+  border-color: var(--accent);
+}
+
+button {
+  padding: 12px 22px;
+  font-size: 15px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.tags-hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-sub);
+}
+
+.tag-chip {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 2px 4px 2px 0;
+  cursor: pointer;
+  border: none;
+}
+
+#status {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 16px;
+  min-height: 18px;
+}
+
+.result-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+}
+
+.result-card .law-name {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.result-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.result-card .summary {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+.result-card .tags span {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-right: 4px;
+}
+
+.egov-box {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--accent-light);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.egov-box .egov-label {
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.egov-link {
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.empty {
+  color: var(--text-sub);
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 0;
+}

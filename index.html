@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>コンプライアンス・ナレッジベース検索 | 週次課題</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>コンプライアンス・ナレッジベース検索</h1>
+    <p>条文IDで紐づけた不動産・金融コンプライアンス関連の法令データベース（週次課題プロトタイプ）</p>
+  </header>
+
+  <div class="search-card">
+    <div class="search-row">
+      <input id="keyword" type="text" placeholder="キーワードで検索（例：特定投資家、忠実義務）" autocomplete="off">
+      <button id="searchBtn" type="button">検索</button>
+    </div>
+    <div class="tags-hint">
+      よく使われるタグ：
+      <button class="tag-chip" type="button" data-tag="特定投資家">特定投資家</button>
+      <button class="tag-chip" type="button" data-tag="適格機関投資家">適格機関投資家</button>
+      <button class="tag-chip" type="button" data-tag="投資助言">投資助言</button>
+      <button class="tag-chip" type="button" data-tag="投資運用業">投資運用業</button>
+      <button class="tag-chip" type="button" data-tag="忠実義務">忠実義務</button>
+      <button class="tag-chip" type="button" data-tag="善管注意義務">善管注意義務</button>
+    </div>
+  </div>
+
+  <div id="status"></div>
+  <div id="results"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
